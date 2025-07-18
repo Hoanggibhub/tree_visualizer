@@ -1,0 +1,43 @@
+Cách sử dụng các phiên bản:
+Basic Export với Highlight:
+
+python
+exporter = GraphvizExporter()
+exporter.set_style(node_shape='ellipse', fillcolor='lightblue')
+exporter.export(tree, "output", highlight_path=["user/profile/name"])
+Tạo ảnh GIF:
+
+python
+animator = AnimatedGraphvizExporter()
+animator.export_animation(tree, "animation", duration=0.3)
+Visualization Web:
+
+python
+web_exporter = WebGraphvizExporter()
+web_exporter.export_web(tree, "graph.html")
+Các tính năng đã triển khai:
+Highlight Path:
+
+Node trên path được tô màu khác biệt
+
+Hỗ trợ nhiều path cùng lúc
+
+Custom Style:
+
+Tùy chỉnh shape, màu sắc, font
+
+Style áp dụng nhất quán toàn đồ thị
+
+Ảnh động:
+
+Tự động sinh khung hình theo build order
+
+Tùy chỉnh tốc độ animation
+
+Web Interactive:
+
+Zoom/Pan bằng chuột
+
+Mini-map navigation
+
+Hiệu ứng hover node

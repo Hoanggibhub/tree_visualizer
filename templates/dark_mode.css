@@ -1,0 +1,49 @@
+body {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-family: monospace;
+}
+
+.node {
+  margin-left: 20px;
+}
+
+.key {
+  color: #9cdcfe;
+}
+
+.value {
+  color: #ce9178;
+}
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+  color: #dcdcaa;
+}
+
+.caret::before {
+  content: "▶";
+  color: #dcdcaa;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+  content: "▼";
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.highlight {
+  background-color: #264f78;
+  padding: 2px;
+  border-radius: 4px;
+}
